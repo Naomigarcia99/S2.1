@@ -45,3 +45,14 @@ printNumbers(arrNumbers);
 //Ejercicio 5
 
 setTimeout(() => console.log("Mensaje después de 3 segundos"), 3000);
+
+//Ejercicio 1.2. Operador ternario
+
+//Nivel 1
+//Ejercicio 1
+
+function potConduir(edad) {
+  edad >= 18 ? console.log("Pots conduir") : console.log("No pots conduir");
+}
+
+potConduir(17);
