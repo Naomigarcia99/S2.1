@@ -14,3 +14,16 @@ console.log(suma(2, 3));
 
 const randomNumber = () => Math.floor(Math.random() * 101);
 console.log(randomNumber());
+
+//Ejercicio 3
+
+class Person {
+  constructor(name) {
+    this._name = name;
+  }
+
+  greet = () => console.log(`Hola, ${this._name}`);
+}
+
+const instancia = new Person("Naomi");
+instancia.greet();
