@@ -27,3 +27,16 @@ class Person {
 
 const instancia = new Person("Naomi");
 instancia.greet();
+
+//Nivel 2
+//Ejercicio 4
+
+function printNumbers(array) {
+  for (let i = 0; i < array.length; i++) {
+    const print = (num) => console.log(num);
+    print(arrNumbers[i]);
+  }
+}
+
+const arrNumbers = [1, 2, 3, 4, 5];
+printNumbers(arrNumbers);
