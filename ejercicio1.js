@@ -40,3 +40,8 @@ function printNumbers(array) {
 
 const arrNumbers = [1, 2, 3, 4, 5];
 printNumbers(arrNumbers);
+
+//Nivel 3
+//Ejercicio 5
+
+setTimeout(() => console.log("Mensaje después de 3 segundos"), 3000);
