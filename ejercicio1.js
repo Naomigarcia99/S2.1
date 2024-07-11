@@ -131,3 +131,16 @@ function resultado(suma) {
 }
 
 calculadora(8, 3, resultado);
+
+//Nivel 2
+//Ejercicio 3
+function esperarISaludar(nom, callback) {
+  let saludo = "Saludos para " + nom;
+  callback(saludo);
+}
+
+function saludar(saludo) {
+  console.log(saludo);
+}
+
+setTimeout(() => esperarISaludar("Anna", saludar), 2000);
