@@ -90,3 +90,18 @@ function trobarMaxim(a, b, c) {
 }
 
 trobarMaxim(num3, num4, num5);
+
+//Nivel 3
+//Ejercicio 4
+function parOImpar(arrNum) {
+  for (i = 0; i < arrNum.length; i++) {
+    const recorrer = (num) =>
+      num % 2 == 0
+        ? console.log(`${num} es par`)
+        : console.log(`${num} es impar`);
+    recorrer(arrNum[i]);
+  }
+}
+
+const arrNum = [2, 4, 5, 6, 7, 9, 12];
+parOImpar(arrNum);
