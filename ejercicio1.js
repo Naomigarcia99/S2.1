@@ -144,3 +144,17 @@ function saludar(saludo) {
 }
 
 setTimeout(() => esperarISaludar("Anna", saludar), 2000);
+
+//Ejercicio 4
+function procesarElements(arr1, callback) {
+  arr1.forEach((num) => {
+    let mensaje = "Número: " + num;
+    callback(mensaje);
+  });
+}
+
+function recorrerArr(num) {
+  console.log(num);
+}
+
+procesarElements([2, 5, 1, 8], recorrerArr);
