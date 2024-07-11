@@ -188,3 +188,10 @@ const array2 = [5, 6, 7, 8];
 
 const array3 = [...array1, ...array2];
 console.log(array3);
+
+//Ejercicio 2
+function suma2(...args) {
+  console.log(args.reduce((total, num) => total + num, 0));
+}
+
+suma2(2, 3, 4);
