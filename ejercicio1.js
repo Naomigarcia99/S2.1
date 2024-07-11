@@ -158,3 +158,23 @@ function recorrerArr(num) {
 }
 
 procesarElements([2, 5, 1, 8], recorrerArr);
+
+//Nivel 3
+//Ejercicio 5
+function procesarCadena(cadena, callback) {
+  const letras = cadena.split(""); //Convertir cadena en array para usar forEach
+  let palabra = ""; //Para almacenar los cambios a mayúscula aquí y que el resultado sea una palabra entera, no cada carácter
+
+  letras.forEach((letra) => {
+    const cambio = letra.toUpperCase();
+    palabra += cambio;
+  });
+
+  callback(palabra);
+}
+
+function mayusculas(palabra) {
+  console.log(palabra);
+}
+
+procesarCadena("mariposa", mayusculas);
