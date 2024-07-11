@@ -105,3 +105,17 @@ function parOImpar(arrNum) {
 
 const arrNum = [2, 4, 5, 6, 7, 9, 12];
 parOImpar(arrNum);
+
+//Ejercicio 1.3. Callbacks
+//Nivel 1
+//Ejercicio 1
+function procesar(nom, callback) {
+  let miNombre = "Hola, me llamo " + nom;
+  callback(miNombre);
+}
+
+function logNombre(nom) {
+  console.log(nom);
+}
+
+procesar("Naomi", logNombre);
