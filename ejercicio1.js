@@ -119,3 +119,15 @@ function logNombre(nom) {
 }
 
 procesar("Naomi", logNombre);
+
+//Ejercicio 2
+function calculadora(numero1, numero2, callback) {
+  let total = "La suma es: " + (numero1 + numero2);
+  callback(total);
+}
+
+function resultado(suma) {
+  console.log(suma);
+}
+
+calculadora(8, 3, resultado);
