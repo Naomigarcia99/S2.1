@@ -65,7 +65,7 @@ num1 > num2 ? console.log("num1 és més gran") : console.log("num2 és més gra
 
 //Nivel 2
 //Ejercicio 3
-//Enlace operadores ternarios
+//Enlace
 let num = -2;
 
 num > 0
@@ -73,3 +73,20 @@ num > 0
   : num < 0
   ? console.log("el número es negativo")
   : console.log("el número es cero");
+
+//Con funciones
+let num3 = 8;
+let num4 = 7;
+let num5 = 5;
+
+function trobarMaxim(a, b, c) {
+  a > b && a > c
+    ? console.log(`${a} es el valor máximo comparado con ${b} y ${c}`)
+    : b > a && b > c
+    ? console.log(`${b} es el valor máximo comparado con ${a} y ${c}`)
+    : c > a && c > b
+    ? console.log(`${c} es el valor máximo comparado con ${b} y ${a}`)
+    : console.log("Alguno de los tres valores coincide");
+}
+
+trobarMaxim(num3, num4, num5);
