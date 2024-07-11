@@ -56,3 +56,9 @@ function potConduir(edad) {
 }
 
 potConduir(17);
+
+//Ejercicio 2
+let num1 = 5;
+let num2 = 4;
+
+num1 > num2 ? console.log("num1 és més gran") : console.log("num2 és més gran");
