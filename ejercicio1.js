@@ -195,3 +195,18 @@ function suma2(...args) {
 }
 
 suma2(2, 3, 4);
+
+//Nivel 2
+//Ejercicio 3
+const objecte1 = {
+  nombre: "Naomi",
+  edad: 25,
+  ciudad: "Barcelona",
+};
+
+const objecte2 = { ...objecte1 };
+console.log(objecte2);
+
+objecte2.ciudad = "Madrid";
+console.log(objecte2);
+console.log(objecte1);
