@@ -62,3 +62,14 @@ let num1 = 5;
 let num2 = 4;
 
 num1 > num2 ? console.log("num1 és més gran") : console.log("num2 és més gran");
+
+//Nivel 2
+//Ejercicio 3
+//Enlace operadores ternarios
+let num = -2;
+
+num > 0
+  ? console.log("el número es positivo")
+  : num < 0
+  ? console.log("el número es negativo")
+  : console.log("el número es cero");
