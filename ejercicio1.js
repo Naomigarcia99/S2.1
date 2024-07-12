@@ -329,3 +329,10 @@ for (let value of numeros) {
     break;
   }
 }
+
+//Nivel 3
+//Ejercicio 6
+for (let value of noms) {
+  let index = noms.indexOf(value);
+  console.log(`${value}, posición: ${index}`);
+}
