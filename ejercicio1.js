@@ -318,6 +318,14 @@ console.log(paresF);
 //Ejercicio 4
 let obj = { nom: "Ona", edat: 25, ciutat: "Barcelona" };
 
-for (const clave in obj){
-  console.log(`${clave}:${obj[clave]}`)
+for (const clave in obj) {
+  console.log(`${clave}:${obj[clave]}`);
+}
+
+//Ejercicio 5
+for (let value of numeros) {
+  console.log(value);
+  if (value == 5) {
+    break;
+  }
 }
