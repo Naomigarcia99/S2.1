@@ -302,3 +302,8 @@ console.log(resultMayorS);
 let noms = ["Anna", "Bernat", "Clara"];
 
 noms.forEach((nom) => console.log(nom));
+
+//Ejercicio 2
+for (let value of noms) {
+  console.log(value);
+}
