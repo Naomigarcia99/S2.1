@@ -274,3 +274,9 @@ const arrR = [13, 7, 8, 21];
 const sumar = arrR.reduce((acc, valor) => acc + valor);
 console.log(sumar);
 
+//Nivel 2
+//Ejercicio 5
+const arrL = [1, 3, 7, 10, 15, 17, 11, 5, 8, 12, 9];
+
+const operaciones = (arr) => ((arr = arr.filter((n) => n >= 10)), (arr = arr.map((n) => n * 2)), (arr = arr.reduce((acc, valor) => (acc + valor))));
+console.log(operaciones(arrL));
