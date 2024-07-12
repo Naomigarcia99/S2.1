@@ -354,3 +354,18 @@ promesa();
 promesa().then(() => {
   console.log("Fin de la operación");
 });
+
+//Ejercicio 3
+function promesa2(input) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      input == "Hola"
+        ? resolve("Promesa resuelta")
+        : reject("Promesa rechazada");
+    }, 2000);
+  });
+}
+
+promesa2("Hola")
+  .then((mensaje) => console.log(mensaje))
+  .catch((mensaje) => console.log(mensaje));
