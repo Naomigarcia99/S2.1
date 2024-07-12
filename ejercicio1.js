@@ -250,11 +250,14 @@ const personas = {
 
 console.log(personas);
 
-
 //Ejercicio 1.5. Array transformations
 //Nivel 1
 //Ejercicio 1
-const arrMap = [1, 2, 3, 4];
+const arrN = [1, 2, 3, 4];
 
-const cuadrado = arrMap.map((n) => n*n);
+const cuadrado = arrN.map((n) => n * n);
 console.log(cuadrado);
+
+//Ejercicio 2
+const pares = arrN.filter((n) => n % 2 == 0);
+console.log(pares);
