@@ -313,3 +313,11 @@ let numeros = [1, 2, 3, 4, 5, 6];
 
 const paresF = numeros.filter((n) => n % 2 == 0);
 console.log(paresF);
+
+//Nivel 2
+//Ejercicio 4
+let obj = { nom: "Ona", edat: 25, ciutat: "Barcelona" };
+
+for (const clave in obj){
+  console.log(`${clave}:${obj[clave]}`)
+}
