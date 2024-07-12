@@ -343,7 +343,7 @@ for (let value of noms) {
 function promesa() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(console.log("Hola, món"));
+      resolve("Hola, món");
     }, 2000);
   });
 }
@@ -351,8 +351,8 @@ function promesa() {
 promesa();
 
 //Ejercicio 2
-promesa().then(() => {
-  console.log("Fin de la operación");
+promesa().then((mensaje) => {
+  console.log(mensaje);
 });
 
 //Ejercicio 3
@@ -369,3 +369,11 @@ function promesa2(input) {
 promesa2("Hola")
   .then((mensaje) => console.log(mensaje))
   .catch((mensaje) => console.log(mensaje));
+
+//Ejercicio 4
+async function promesaAsincrona() {
+  const mensaje = await promesa();
+  console.log(mensaje);
+}
+
+promesaAsincrona();
