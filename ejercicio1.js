@@ -261,3 +261,9 @@ console.log(cuadrado);
 //Ejercicio 2
 const pares = arrN.filter((n) => n % 2 == 0);
 console.log(pares);
+
+//Ejercicio 3
+const arrA = [1, 10, 8, 11];
+
+const mayor = arrA.find((n) => n > 10);
+console.log(mayor);
