@@ -336,3 +336,16 @@ for (let value of noms) {
   let index = noms.indexOf(value);
   console.log(`${value}, posición: ${index}`);
 }
+
+//Ejercicio 1.7. Promises $ Async/Await
+//Nivel 1
+//Ejercicio 1
+function promesa() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(console.log("Hola, món"));
+    }, 2000);
+  });
+}
+
+promesa();
