@@ -210,3 +210,13 @@ console.log(objecte2);
 objecte2.ciudad = "Madrid";
 console.log(objecte2);
 console.log(objecte1);
+
+//Ejercicio 4
+const array4 = [1, 2, 3, 4, 5, 6, 7, 8];
+
+let primerNum, segundoNum, restoNum;
+
+[primerNum, segundoNum, ...restoNum] = array4;
+console.log(primerNum);
+console.log(segundoNum);
+console.log(restoNum);
