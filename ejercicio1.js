@@ -295,3 +295,10 @@ const resultMayorE = arrES.every(esMayor);
 const resultMayorS = arrES.some(esMayor);
 console.log(resultMayorE);
 console.log(resultMayorS);
+
+//Ejercicio 1.6. Array loops
+//Nivel 1
+//Ejercicio 1
+let noms = ["Anna", "Bernat", "Clara"];
+
+noms.forEach((nom) => console.log(nom));
