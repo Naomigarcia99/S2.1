@@ -278,5 +278,20 @@ console.log(sumar);
 //Ejercicio 5
 const arrL = [1, 3, 7, 10, 15, 17, 11, 5, 8, 12, 9];
 
-const operaciones = (arr) => ((arr = arr.filter((n) => n >= 10)), (arr = arr.map((n) => n * 2)), (arr = arr.reduce((acc, valor) => (acc + valor))));
+const operaciones = (arr) => (
+  (arr = arr.filter((n) => n >= 10)),
+  (arr = arr.map((n) => n * 2)),
+  (arr = arr.reduce((acc, valor) => acc + valor))
+);
 console.log(operaciones(arrL));
+
+//Nivel 3
+//Ejercicio 6
+const arrES = [11, 12, 13, 14];
+
+const esMayor = (n) => n > 10;
+
+const resultMayorE = arrES.every(esMayor);
+const resultMayorS = arrES.some(esMayor);
+console.log(resultMayorE);
+console.log(resultMayorS);
