@@ -249,3 +249,12 @@ const personas = {
 };
 
 console.log(personas);
+
+
+//Ejercicio 1.5. Array transformations
+//Nivel 1
+//Ejercicio 1
+const arrMap = [1, 2, 3, 4];
+
+const cuadrado = arrMap.map((n) => n*n);
+console.log(cuadrado);
