@@ -263,7 +263,14 @@ const pares = arrN.filter((n) => n % 2 == 0);
 console.log(pares);
 
 //Ejercicio 3
-const arrA = [1, 10, 8, 11];
+const arrF = [1, 10, 8, 11];
 
-const mayor = arrA.find((n) => n > 10);
+const mayor = arrF.find((n) => n > 10);
 console.log(mayor);
+
+//Ejercicio 4
+const arrR = [13, 7, 8, 21];
+
+const sumar = arrR.reduce((acc, valor) => acc + valor);
+console.log(sumar);
+
