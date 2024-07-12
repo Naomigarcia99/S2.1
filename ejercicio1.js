@@ -307,3 +307,9 @@ noms.forEach((nom) => console.log(nom));
 for (let value of noms) {
   console.log(value);
 }
+
+//Ejercicio 3
+let numeros = [1, 2, 3, 4, 5, 6];
+
+const paresF = numeros.filter((n) => n % 2 == 0);
+console.log(paresF);
