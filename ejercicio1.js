@@ -229,3 +229,23 @@ function operador(a, b, c) {
 const operadores = [5, 10, 20];
 
 operador(...operadores);
+
+//Ejercicio 6
+const persona1 = {
+  nombre: "Eli",
+  edad: 30,
+  ciudad: "Zaragoza",
+};
+
+const persona2 = {
+  hoobies: "Viajar",
+  trabajo: "óptica",
+  coche: "seat",
+};
+
+const personas = {
+  ...persona1,
+  ...persona2,
+};
+
+console.log(personas);
