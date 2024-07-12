@@ -220,3 +220,12 @@ let primerNum, segundoNum, restoNum;
 console.log(primerNum);
 console.log(segundoNum);
 console.log(restoNum);
+
+//Nivel 3
+//Ejercicio 5
+function operador(a, b, c) {
+  console.log(a + b, c);
+}
+const operadores = [5, 10, 20];
+
+operador(...operadores);
