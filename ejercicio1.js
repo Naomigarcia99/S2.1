@@ -349,3 +349,8 @@ function promesa() {
 }
 
 promesa();
+
+//Ejercicio 2
+promesa().then(() => {
+  console.log("Fin de la operación");
+});
