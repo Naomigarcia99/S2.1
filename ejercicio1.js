@@ -368,7 +368,7 @@ function promesa2(input) {
 
 promesa2("Hola")
   .then((mensaje) => console.log(mensaje))
-  .catch((mensaje) => console.log(mensaje));
+  .catch((error) => console.log(error));
 
 //Ejercicio 4
 async function promesaAsincrona() {
@@ -377,3 +377,16 @@ async function promesaAsincrona() {
 }
 
 promesaAsincrona();
+
+//Nivel 2
+//Ejercicio 5
+async function promesaAsincrona2() {
+  try {
+    const mensaje = await promesa();
+    console.log(mensaje);
+  } catch (error) {
+    console.error("Error ", error);
+  }
+}
+
+promesaAsincrona2();
