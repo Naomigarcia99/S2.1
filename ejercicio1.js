@@ -390,3 +390,32 @@ async function promesaAsincrona2() {
 }
 
 promesaAsincrona2();
+
+//Nivel 3
+//Ejercicio 6
+let p3 = function promesa3(num) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      num == 10 ? resolve("Número correcto") : reject("número incorrecto");
+    }, 2000);
+  });
+};
+
+let p4 = function promesa4(num) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      num > 10 ? resolve("Número mayor que 10") : reject("número menor que 10");
+    }, 3000);
+  });
+};
+
+async function promiseAllAsync() {
+  try {
+    const mensajes = await Promise.all([p3(10), p4(11)]);
+    console.log("Promesas resueltas:", mensajes);
+  } catch (error) {
+    console.log("Almenos una de las promesas se ha rechazado:", error);
+  }
+}
+
+promiseAllAsync();
